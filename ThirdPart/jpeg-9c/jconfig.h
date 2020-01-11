@@ -33,8 +33,8 @@
 #undef RLE_SUPPORTED		/* Utah RLE image file format */
 #define TARGA_SUPPORTED		/* Targa image file format */
 
-#define USE_CCOMMAND		/* Command line reader for Macintosh */
-#define TWO_FILE_COMMANDLINE	/* Binary I/O thru stdin/stdout doesn't work */
+#undef USE_CCOMMAND		/* Command line reader for Macintosh */
+#undef TWO_FILE_COMMANDLINE	/* Binary I/O thru stdin/stdout doesn't work */
 
 #undef NEED_SIGNAL_CATCHER
 #undef DONT_USE_B_MODE

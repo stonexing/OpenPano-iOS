@@ -22,7 +22,7 @@ void LinearBlender::debug_run(int w, int h) {
 		auto& img = images[k];
 		img.imgref.load();
 		Mat32f target(h, w, 3);
-		fill(target, Color::NO);
+		fill(target, Color::NOCO);
 		for (int i = 0; i < target.height(); i ++) {
 			float *row = target.ptr(i);
 			for (int j = 0; j < target.width(); j ++) {
@@ -53,7 +53,7 @@ void MultiBandBlender::debug_level(int level) const {
 			if (not t.meta.mask.get(i, j))
 				wimg.at(i, j).c.write_to(img.ptr(i, j));
 			else
-				Color::NO.write_to(img.ptr(i, j));
+				Color::NOCO.write_to(img.ptr(i, j));
 			float* p = weight.ptr(i, j);
 			p[0] = p[1] = p[2] = wimg.at(i, j).w;
 		}

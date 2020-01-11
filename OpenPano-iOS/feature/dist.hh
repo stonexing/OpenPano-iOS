@@ -26,7 +26,7 @@ struct L2SSE {
 				Iterator1 a, Iterator2 b,
 				size_t size, ResultType worst_dist = -1) const {
 				if (worst_dist <= 0) worst_dist = std::numeric_limits<float>::max();
-				return pano::euclidean_sqr(a, b, size, worst_dist);
+				return pano::euclidean_sqr(a, (const float *)b, size, worst_dist);
     }
 
     template <typename U, typename V>

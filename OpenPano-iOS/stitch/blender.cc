@@ -75,7 +75,7 @@ Mat32f LinearBlender::run() {
 			}
 		}
 	} else {
-		fill(target, Color::NO);
+		fill(target, Color::NOCO);
 #pragma omp parallel for schedule(dynamic)
 		for (int i = 0; i < target.height(); i ++) {
 			float *row = target.ptr(i);

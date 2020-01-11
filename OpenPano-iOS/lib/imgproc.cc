@@ -136,21 +136,21 @@ Color interpolate(const Mat32f& mat, float r, float c) {
 	m_assert(mat.channels() == 3);
 	int fr = floor(r), fc =  floor(c);
 	if (fr < 0 || fc < 0 || fc + 1 >= mat.cols() || fr + 1 >= mat.rows())
-		return Color::NO;
+		return Color::NOCO;
 	Color ret = Color::BLACK;
 	r -= fr, c -= fc;
 
 	const float* p = mat.ptr(fr, fc);
-	if (*p < 0) return Color::NO;		// return Color::NO if any one of the neighbor is Colo::NO
+	if (*p < 0) return Color::NOCO;		// return Color::NO if any one of the neighbor is Colo::NO
 	ret += Color(p) * ((1 - r) * (1 - c));
 	p = mat.ptr(fr + 1, fc);
-	if (*p < 0) return Color::NO;
+	if (*p < 0) return Color::NOCO;
 	ret += Color(p) * (r * (1 - c));
 	p = mat.ptr(fr + 1, fc + 1);
-	if (*p < 0) return Color::NO;
+	if (*p < 0) return Color::NOCO;
 	ret += Color(p) * (r * c);
 	p = mat.ptr(fr, fc + 1);
-	if (*p < 0) return Color::NO;
+	if (*p < 0) return Color::NOCO;
 	ret += Color(p) * ((1 - r) * c);
 	return ret;
 }
@@ -159,7 +159,7 @@ Color interpolate(const Matuc& mat, float r, float c) {
 	m_assert(mat.channels() == 3);
 	int fr = floor(r), fc =  floor(c);
 	if (fr < 0 || fc < 0 || fc + 1 >= mat.cols() || fr + 1 >= mat.rows())
-		return Color::NO;
+		return Color::NOCO;
 	Color ret = Color::BLACK;
 	r -= fr, c -= fc;
 

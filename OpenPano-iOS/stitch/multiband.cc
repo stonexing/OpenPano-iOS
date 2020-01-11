@@ -60,7 +60,7 @@ Mat32f MultiBandBlender::run() {
 	create_first_level();
 	update_weight_map();
 	Mat32f target(target_size.y, target_size.x, 3);
-	fill(target, Color::NO);
+	fill(target, Color::NOCO);
 
 	Mask2D target_mask(target_size.y, target_size.x);
 

@@ -29,7 +29,7 @@ Mat32f CylinderProject::project(const Mat32f& img, vector<Vec2D>& pts) const {
 	real_t sizefactor_inv = 1.0 / sizefactor;
 
 	Mat32f mat(shape.h, shape.w, 3);
-	fill(mat, Color::NO);
+	fill(mat, Color::NOCO);
 #pragma omp parallel for schedule(dynamic)
 	REP(i, mat.height()) REP(j, mat.width()) {
 		Vec2D oricoor = proj_r((Vec2D(j, i) - offset) * sizefactor_inv);

@@ -21,7 +21,7 @@ struct Descriptor {
 
 	// square of euclidean. use now_thres to early-stop
 	float euclidean_sqr(const Descriptor& r, float now_thres) const {
-		return pano::euclidean_sqr(descriptor.data(), r.descriptor.data(), (int)descriptor.size(), now_thres);
+		return pano::euclidean_sqr(descriptor.data(), (const float *)r.descriptor.data(), (int)descriptor.size(), now_thres);
 	}
 
 	int hamming(const Descriptor& r) const {

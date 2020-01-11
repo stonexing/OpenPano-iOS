@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F344D723C9A556007C099A /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F344D623C9A556007C099A /* libjpeg.a */; };
+		00F344DB23C9A5D2007C099A /* lodepng.cc in Sources */ = {isa = PBXBuildFile; fileRef = 00F344DA23C9A5D2007C099A /* lodepng.cc */; };
+		00F344DE23C9A72F007C099A /* OpenPano.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00F344DD23C9A72F007C099A /* OpenPano.mm */; };
+		00F344E923C9B533007C099A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344E623C9B533007C099A /* 2.jpg */; };
+		00F344EA23C9B533007C099A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344E723C9B533007C099A /* 1.jpg */; };
+		00F344EB23C9B533007C099A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344E823C9B533007C099A /* 3.jpg */; };
+		00F344ED23C9BAE5007C099A /* config.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344EC23C9BAE5007C099A /* config.cfg */; };
 		00FF586223C81CA0008C02DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF586123C81CA0008C02DE /* AppDelegate.m */; };
 		00FF586523C81CA0008C02DE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF586423C81CA0008C02DE /* SceneDelegate.m */; };
 		00FF586823C81CA0008C02DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF586723C81CA0008C02DE /* ViewController.m */; };
@@ -50,6 +57,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00F344D223C9A556007C099A /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
+		00F344D323C9A556007C099A /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
+		00F344D423C9A556007C099A /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
+		00F344D523C9A556007C099A /* jmorecfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jmorecfg.h; sourceTree = "<group>"; };
+		00F344D623C9A556007C099A /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		00F344D923C9A5D2007C099A /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lodepng.h; sourceTree = "<group>"; };
+		00F344DA23C9A5D2007C099A /* lodepng.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lodepng.cc; sourceTree = "<group>"; };
+		00F344DC23C9A72F007C099A /* OpenPano.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenPano.h; sourceTree = "<group>"; };
+		00F344DD23C9A72F007C099A /* OpenPano.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenPano.mm; sourceTree = "<group>"; };
+		00F344E623C9B533007C099A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		00F344E723C9B533007C099A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		00F344E823C9B533007C099A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		00F344EC23C9BAE5007C099A /* config.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.cfg; sourceTree = "<group>"; };
 		00FF585D23C81CA0008C02DE /* OpenPano-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenPano-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FF586023C81CA0008C02DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00FF586123C81CA0008C02DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,12 +159,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F344D723C9A556007C099A /* libjpeg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00F344D123C9A556007C099A /* libjpeg */ = {
+			isa = PBXGroup;
+			children = (
+				00F344D223C9A556007C099A /* jpeglib.h */,
+				00F344D323C9A556007C099A /* jerror.h */,
+				00F344D423C9A556007C099A /* jconfig.h */,
+				00F344D523C9A556007C099A /* jmorecfg.h */,
+				00F344D623C9A556007C099A /* libjpeg.a */,
+			);
+			path = libjpeg;
+			sourceTree = "<group>";
+		};
+		00F344D823C9A5D2007C099A /* lodepng */ = {
+			isa = PBXGroup;
+			children = (
+				00F344D923C9A5D2007C099A /* lodepng.h */,
+				00F344DA23C9A5D2007C099A /* lodepng.cc */,
+			);
+			path = lodepng;
+			sourceTree = "<group>";
+		};
+		00F344DF23C9B391007C099A /* png */ = {
+			isa = PBXGroup;
+			children = (
+				00F344E723C9B533007C099A /* 1.jpg */,
+				00F344E623C9B533007C099A /* 2.jpg */,
+				00F344E823C9B533007C099A /* 3.jpg */,
+			);
+			path = png;
+			sourceTree = "<group>";
+		};
 		00FF585423C81CA0008C02DE = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +216,10 @@
 		00FF585F23C81CA0008C02DE /* OpenPano-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				00F344EC23C9BAE5007C099A /* config.cfg */,
+				00F344DF23C9B391007C099A /* png */,
+				00F344D823C9A5D2007C099A /* lodepng */,
+				00F344D123C9A556007C099A /* libjpeg */,
 				00FF5B3E23C862DB008C02DE /* common */,
 				00FF5B4023C862DB008C02DE /* feature */,
 				00FF5B5323C862DC008C02DE /* lib */,
@@ -174,6 +230,8 @@
 				00FF586423C81CA0008C02DE /* SceneDelegate.m */,
 				00FF586623C81CA0008C02DE /* ViewController.h */,
 				00FF586723C81CA0008C02DE /* ViewController.m */,
+				00F344DC23C9A72F007C099A /* OpenPano.h */,
+				00F344DD23C9A72F007C099A /* OpenPano.mm */,
 				00FF586923C81CA0008C02DE /* Main.storyboard */,
 				00FF586C23C81CA6008C02DE /* Assets.xcassets */,
 				00FF586E23C81CA6008C02DE /* LaunchScreen.storyboard */,
@@ -338,9 +396,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F344ED23C9BAE5007C099A /* config.cfg in Resources */,
 				00FF587023C81CA6008C02DE /* LaunchScreen.storyboard in Resources */,
 				00FF586D23C81CA6008C02DE /* Assets.xcassets in Resources */,
+				00F344E923C9B533007C099A /* 2.jpg in Resources */,
+				00F344EB23C9B533007C099A /* 3.jpg in Resources */,
 				00FF586B23C81CA0008C02DE /* Main.storyboard in Resources */,
+				00F344EA23C9B533007C099A /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +430,7 @@
 				00FF5B6F23C862DC008C02DE /* warp.cc in Sources */,
 				00FF586223C81CA0008C02DE /* AppDelegate.m in Sources */,
 				00FF5B7B23C862DC008C02DE /* feature.cc in Sources */,
+				00F344DE23C9A72F007C099A /* OpenPano.mm in Sources */,
 				00FF5B8123C862DC008C02DE /* debugutils.cc in Sources */,
 				00FF5B8523C862DC008C02DE /* imgproc.cc in Sources */,
 				00FF5B7323C862DC008C02DE /* blender.cc in Sources */,
@@ -378,6 +441,7 @@
 				00FF5B8723C862DC008C02DE /* timer.cc in Sources */,
 				00FF587323C81CA6008C02DE /* main.m in Sources */,
 				00FF5B7523C862DC008C02DE /* incremental_bundle_adjuster.cc in Sources */,
+				00F344DB23C9A5D2007C099A /* lodepng.cc in Sources */,
 				00FF5B7223C862DC008C02DE /* camera_estimator.cc in Sources */,
 				00FF5B8A23C862DC008C02DE /* color.cc in Sources */,
 				00FF5B6D23C862DC008C02DE /* camera.cc in Sources */,
@@ -527,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JLDCB94LG;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -539,6 +604,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenPano-iOS",
+					"$(PROJECT_DIR)/OpenPano-iOS/libjpeg",
+				);
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.golden.OpenPano-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,6 +617,7 @@
 				USER_HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/$(PROJECT_NAME)/",
 					"$(SRCROOT)/ThirdPart/flann",
+					"$(SRCROOT)/ThirdPart/CImg",
 				);
 			};
 			name = Debug;
@@ -555,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JLDCB94LG;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -566,6 +638,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenPano-iOS",
+					"$(PROJECT_DIR)/OpenPano-iOS/libjpeg",
+				);
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.golden.OpenPano-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -574,6 +651,7 @@
 				USER_HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/$(PROJECT_NAME)/",
 					"$(SRCROOT)/ThirdPart/flann",
+					"$(SRCROOT)/ThirdPart/CImg",
 				);
 			};
 			name = Release;

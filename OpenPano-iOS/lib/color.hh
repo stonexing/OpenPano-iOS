@@ -43,7 +43,7 @@ class Color: public Vector<float> {
 		Color operator + (const Color &v) const
 		{ return Color(x + v.x, y + v.y, z + v.z); }
 
-		static const Color WHITE, BLACK, RED, BLUE, NO;
+		static const Color WHITE, BLACK, RED, BLUE, NOCO;
 };
 
 

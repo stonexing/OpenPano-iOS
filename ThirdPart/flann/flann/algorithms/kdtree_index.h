@@ -36,6 +36,7 @@
 #include <cassert>
 #include <cstring>
 #include <stdarg.h>
+#include <cmath>
 
 #include "flann/general.h"
 #include "flann/algorithms/nn_index.h"

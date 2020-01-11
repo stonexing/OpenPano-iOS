@@ -56,6 +56,11 @@
 #ifndef cimg_version
 #define cimg_version 282
 
+#define cimg_no_system_calls
+#define cimg_display 0
+#define cimg_use_jpeg
+
+
 /*-----------------------------------------------------------
  #
  # Test and possibly auto-set CImg configuration variables
