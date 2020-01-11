@@ -10,10 +10,11 @@
 		00F344D723C9A556007C099A /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F344D623C9A556007C099A /* libjpeg.a */; };
 		00F344DB23C9A5D2007C099A /* lodepng.cc in Sources */ = {isa = PBXBuildFile; fileRef = 00F344DA23C9A5D2007C099A /* lodepng.cc */; };
 		00F344DE23C9A72F007C099A /* OpenPano.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00F344DD23C9A72F007C099A /* OpenPano.mm */; };
-		00F344E923C9B533007C099A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344E623C9B533007C099A /* 2.jpg */; };
-		00F344EA23C9B533007C099A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344E723C9B533007C099A /* 1.jpg */; };
-		00F344EB23C9B533007C099A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344E823C9B533007C099A /* 3.jpg */; };
 		00F344ED23C9BAE5007C099A /* config.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344EC23C9BAE5007C099A /* config.cfg */; };
+		00F344F323C9C371007C099A /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344EF23C9C370007C099A /* 4.jpg */; };
+		00F344F423C9C371007C099A /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344F023C9C370007C099A /* 2.jpg */; };
+		00F344F523C9C371007C099A /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344F123C9C370007C099A /* 3.jpg */; };
+		00F344F623C9C371007C099A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00F344F223C9C370007C099A /* 1.jpg */; };
 		00FF586223C81CA0008C02DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF586123C81CA0008C02DE /* AppDelegate.m */; };
 		00FF586523C81CA0008C02DE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF586423C81CA0008C02DE /* SceneDelegate.m */; };
 		00FF586823C81CA0008C02DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FF586723C81CA0008C02DE /* ViewController.m */; };
@@ -66,10 +67,11 @@
 		00F344DA23C9A5D2007C099A /* lodepng.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lodepng.cc; sourceTree = "<group>"; };
 		00F344DC23C9A72F007C099A /* OpenPano.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenPano.h; sourceTree = "<group>"; };
 		00F344DD23C9A72F007C099A /* OpenPano.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenPano.mm; sourceTree = "<group>"; };
-		00F344E623C9B533007C099A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		00F344E723C9B533007C099A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		00F344E823C9B533007C099A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		00F344EC23C9BAE5007C099A /* config.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.cfg; sourceTree = "<group>"; };
+		00F344EF23C9C370007C099A /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		00F344F023C9C370007C099A /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		00F344F123C9C370007C099A /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		00F344F223C9C370007C099A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		00FF585D23C81CA0008C02DE /* OpenPano-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenPano-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FF586023C81CA0008C02DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00FF586123C81CA0008C02DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -187,14 +189,15 @@
 			path = lodepng;
 			sourceTree = "<group>";
 		};
-		00F344DF23C9B391007C099A /* png */ = {
+		00F344EE23C9C370007C099A /* flower */ = {
 			isa = PBXGroup;
 			children = (
-				00F344E723C9B533007C099A /* 1.jpg */,
-				00F344E623C9B533007C099A /* 2.jpg */,
-				00F344E823C9B533007C099A /* 3.jpg */,
+				00F344EF23C9C370007C099A /* 4.jpg */,
+				00F344F023C9C370007C099A /* 2.jpg */,
+				00F344F123C9C370007C099A /* 3.jpg */,
+				00F344F223C9C370007C099A /* 1.jpg */,
 			);
-			path = png;
+			path = flower;
 			sourceTree = "<group>";
 		};
 		00FF585423C81CA0008C02DE = {
@@ -217,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				00F344EC23C9BAE5007C099A /* config.cfg */,
-				00F344DF23C9B391007C099A /* png */,
+				00F344EE23C9C370007C099A /* flower */,
 				00F344D823C9A5D2007C099A /* lodepng */,
 				00F344D123C9A556007C099A /* libjpeg */,
 				00FF5B3E23C862DB008C02DE /* common */,
@@ -396,13 +399,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F344F623C9C371007C099A /* 1.jpg in Resources */,
+				00F344F323C9C371007C099A /* 4.jpg in Resources */,
 				00F344ED23C9BAE5007C099A /* config.cfg in Resources */,
 				00FF587023C81CA6008C02DE /* LaunchScreen.storyboard in Resources */,
+				00F344F423C9C371007C099A /* 2.jpg in Resources */,
 				00FF586D23C81CA6008C02DE /* Assets.xcassets in Resources */,
-				00F344E923C9B533007C099A /* 2.jpg in Resources */,
-				00F344EB23C9B533007C099A /* 3.jpg in Resources */,
+				00F344F523C9C371007C099A /* 3.jpg in Resources */,
 				00FF586B23C81CA0008C02DE /* Main.storyboard in Resources */,
-				00F344EA23C9B533007C099A /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

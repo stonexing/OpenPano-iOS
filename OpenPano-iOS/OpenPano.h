@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (OpenPano*)instance;
 
-- (void)stitchImageFiles:(NSArray *)pathFiles;
+- (NSString *)stitchImageFiles:(NSArray *)pathFiles;
 
 @end
 

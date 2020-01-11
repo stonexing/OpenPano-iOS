@@ -377,7 +377,7 @@ void panomain(int argc, char* argv[]) {
     return panoinstance;
 }
 
-- (void)stitchImageFiles:(NSArray *)pathFiles{
+- (NSString *)stitchImageFiles:(NSArray *)pathFiles{
     int fileCount = pathFiles.count;
     if (fileCount < 2){
         NSLog(@"文件两个图片起步");
@@ -408,10 +408,12 @@ void panomain(int argc, char* argv[]) {
     {
         GuardedTimer tm("Writing image");
 //        write_rgb(IMGFILE(out), res);
-        NSString *temp = [NSTemporaryDirectory() stringByAppendingString:@"/out.jpg"];
+        NSString *temp = [NSTemporaryDirectory() stringByAppendingString:@"out.jpg"];
         NSLog(temp);
         write_rgb([temp cStringUsingEncoding:NSUTF8StringEncoding], res);
+        return temp;
     }
+    return @"";
 }
 
 @end
