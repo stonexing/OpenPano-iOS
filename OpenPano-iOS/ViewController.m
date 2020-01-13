@@ -24,7 +24,7 @@
     dispatch_async(global_queue, ^{
         NSMutableArray *ary = [NSMutableArray new];
         for (int i=1; i<5; i++){
-            NSString *png = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", i] ofType:@"jpg"];
+            NSString *png = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"1%d", i] ofType:@"jpg"];
             [ary addObject:png];
         }
         OpenPano *pano = [OpenPano instance];

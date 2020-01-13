@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0092815A23CC100100E9FE65 /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0092815623CC100100E9FE65 /* 14.jpg */; };
+		0092815C23CC100100E9FE65 /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0092815823CC100100E9FE65 /* 13.jpg */; };
+		0092815D23CC100100E9FE65 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0092815923CC100100E9FE65 /* 11.jpg */; };
+		0092815F23CC105900E9FE65 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0092815E23CC105900E9FE65 /* 12.jpg */; };
 		00F344D723C9A556007C099A /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F344D623C9A556007C099A /* libjpeg.a */; };
 		00F344DB23C9A5D2007C099A /* lodepng.cc in Sources */ = {isa = PBXBuildFile; fileRef = 00F344DA23C9A5D2007C099A /* lodepng.cc */; };
 		00F344DE23C9A72F007C099A /* OpenPano.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00F344DD23C9A72F007C099A /* OpenPano.mm */; };
@@ -58,6 +62,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0092815623CC100100E9FE65 /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
+		0092815823CC100100E9FE65 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		0092815923CC100100E9FE65 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		0092815E23CC105900E9FE65 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
 		00F344D223C9A556007C099A /* jpeglib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jpeglib.h; sourceTree = "<group>"; };
 		00F344D323C9A556007C099A /* jerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jerror.h; sourceTree = "<group>"; };
 		00F344D423C9A556007C099A /* jconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconfig.h; sourceTree = "<group>"; };
@@ -168,6 +176,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0092815523CC100100E9FE65 /* settingimg */ = {
+			isa = PBXGroup;
+			children = (
+				0092815623CC100100E9FE65 /* 14.jpg */,
+				0092815823CC100100E9FE65 /* 13.jpg */,
+				0092815E23CC105900E9FE65 /* 12.jpg */,
+				0092815923CC100100E9FE65 /* 11.jpg */,
+			);
+			path = settingimg;
+			sourceTree = "<group>";
+		};
 		00F344D123C9A556007C099A /* libjpeg */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +240,7 @@
 			children = (
 				00F344EC23C9BAE5007C099A /* config.cfg */,
 				00F344EE23C9C370007C099A /* flower */,
+				0092815523CC100100E9FE65 /* settingimg */,
 				00F344D823C9A5D2007C099A /* lodepng */,
 				00F344D123C9A556007C099A /* libjpeg */,
 				00FF5B3E23C862DB008C02DE /* common */,
@@ -399,11 +419,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0092815A23CC100100E9FE65 /* 14.jpg in Resources */,
 				00F344F623C9C371007C099A /* 1.jpg in Resources */,
+				0092815D23CC100100E9FE65 /* 11.jpg in Resources */,
 				00F344F323C9C371007C099A /* 4.jpg in Resources */,
 				00F344ED23C9BAE5007C099A /* config.cfg in Resources */,
+				0092815C23CC100100E9FE65 /* 13.jpg in Resources */,
 				00FF587023C81CA6008C02DE /* LaunchScreen.storyboard in Resources */,
 				00F344F423C9C371007C099A /* 2.jpg in Resources */,
+				0092815F23CC105900E9FE65 /* 12.jpg in Resources */,
 				00FF586D23C81CA6008C02DE /* Assets.xcassets in Resources */,
 				00F344F523C9C371007C099A /* 3.jpg in Resources */,
 				00FF586B23C81CA0008C02DE /* Main.storyboard in Resources */,
@@ -598,6 +622,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JLDCB94LG;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenPano-iOS",
@@ -633,6 +658,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7JLDCB94LG;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OpenPano-iOS",
